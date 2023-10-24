@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript basic questions</title>
+</head>
+<body>
+  
+
 <script>
 
   // Functions are a way to store a re-usable snippet of code in a block which can
@@ -8,9 +18,28 @@
   }
 
   // Task 1: Invoke the printCurrentTime function inside a console.log():
+  
+    console.log(printCurrentTime());
+  
 
 
   // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
+  
+  // let name =("Alma");
+  
+  const printName = (name)=> {
+    console.log('Print name', name);
+  }
+  printName('Casper');
+
+  function invoke (printName) {
+    console.log(printName);
+  }
+  invoke("Alma");
+  invoke("Kawsar");
+
+
+  
 
 
   // Task 3: Write a function called `printGreeting`. When invoked using the examples
@@ -18,6 +47,16 @@
   //
   // printGreeting("Bob") // This should print "Hello Bob"
   // printGreeting("Sue") // This should print "Hello Sue"
+
+  // let name1 = ("Bob");
+  // let name2 = ("Sue");
+
+  function printGreeting (name) {
+    console.log('Hello ' + name);
+  }
+
+  printGreeting("Bob")
+  printGreeting("Sue")
 
 
   // Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
@@ -29,16 +68,39 @@
   // const second = multiply(100, 4)
   // console.log(second) // this should print "400"
 
+  const multiply = (num1, num2)=> {
+  return num1 * num2;
+   };
+  console.log(multiply(2,2));
+
+  // second task //
+
+  function multiply2(num1, num2) {
+    return num1 * num2;
+  };
+  console.log(multiply2(100,4));
+
 
   // Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
   // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
   // function. It should print "Go for a run!"
   //
-  // if (warmEnough(15)) {
-  //   console.log("Go for a run!")
-  // }
+   
+  function warmEnough (temp) {
+  if (temp > 10) {
+  console. log ("Go for a run!");
+  } else if (temp < 10)
+  { console. log ("Don't go for a run!") 
+}
+
+    }  warmEnough(7);
+
+
 
 
 </script>
 
 <p>Open the console in the browser to see the output of this script.</p>
+
+</body>
+</html>
